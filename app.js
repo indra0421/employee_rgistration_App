@@ -6,22 +6,22 @@ const path = require("path");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-require("./db/connections");
+require("./src/db/connections");
 
 const { json } = require("express");
 app.use(express.json());
 const hbs = require("hbs");
 const port = process.env.PORT || 4500;
 
-const Register = require("./models/employees");
+const Register = require("./src/models/employees");
 const { resolveSoa } = require("dns/promises");
 
 //getting the path of public folder for the website
-const static_path = path.join(__dirname, "../public");
+const static_path = path.join(__dirname, "./public");
 app.use(express.static(static_path));
 //---------------------------------------------
-const template_path = path.join(__dirname, "../templates/views");
-const partial_path = path.join(__dirname, "../templates/views");
+const template_path = path.join(__dirname, "./templates/views");
+const partial_path = path.join(__dirname, "./templates/views");
 //setting the view engine
 app.set("view engine", "hbs");
 app.set('views', template_path);   //setting the viws folder as render
@@ -47,9 +47,6 @@ app.post("/register", async (req, res) => {
         //checking the password same or not
         const password = req.body.password;
         const confpassword = req.body.confirmpassword;
-
-
-
         // console.log(req.body.)
 
         if (password === confpassword) {

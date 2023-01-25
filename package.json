@@ -2,12 +2,12 @@
   "name": "registration_form_with_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
     "build": "webpack",
-    "start": "node src/app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev" : "nodemon src/server.js"
+    "dev" : "nodemon app.js"
   },
   "keywords": [],
   "author": "",
