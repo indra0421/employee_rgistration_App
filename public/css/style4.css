@@ -1,0 +1,289 @@
+::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+   background-color: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+::-webkit-resizer{
+    -webkit-border-radius:4px;
+    background-color: rgba(255,255,255,0.5);
+}
+::-webkit-scrollbar-thumb{
+    min-height:8pm;
+    min-width:8pm;
+    background-color: rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+::-webkit-scrollbar-thumb:active{
+    background-color: rgba(0,0,0,0.7);
+}
+
+body {
+	/* background: url("http://farm4.staticflickr.com/3088/3156977955_031c06623f_b.jpg") no-repeat center center fixed;  */
+	/* background: url("https://hbr.org/resources/images/article_assets/2020/03/R2003G_BAGNARELLI.jpg") no-repeat center center fixed;  */
+	background: no-repeat center center fixed; 
+	background-image: url('../assets/emp2.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  background-color: #313131;
+	color: #000305;
+	font-size: 13px; 
+	font-family: 'Lucida Sans', Arial, sans-serif;
+	line-height: 13px;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.body
+{
+	clear: both; 
+	margin: 0 auto;
+	width: 70%;
+}
+a{
+	color: white;
+}
+h1 {
+	/* color: #fff; */
+	font-size: 28px; 
+	font-family: 'Lobster', 'Lucida Sans', Arial, sans-serif;
+	line-height: 28px;
+	text-align:right;
+	/* float:right; */
+	margin:30px 30px 0 0;
+	margin-bottom: 41px;
+}	
+
+h2 {font-size: 22px}
+h3 {font-size: 20px}
+h4 {font-size: 18px}
+h5 {font-size: 16px}
+h6 {font-size: 14px}
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 15px;
+	margin-bottom: 5px;
+}
+   
+.header nav {
+	background: rgba(0,0,0,0.3);
+	font-size: 1.143em;
+	height: 40px;
+	line-height: 30px;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+	
+.header nav ul {
+	list-style: none; 
+	margin: 0 auto;
+}
+
+.header nav ul li {
+	float: left; 
+	display: inline; 
+}
+	
+.header nav a:link, .header nav a:visited {
+	color: #fff;
+	display: inline-block;
+	height: 30px;
+	padding: 5px 23px;
+	text-decoration: none;
+}
+.header nav a:hover, .header nav a:active,
+.header nav .active a:link, .header nav .active a:visited {
+	background-color: rgba(207,92,63,0.5);
+	color: #fff;
+	text-shadow: none !important;
+}
+	
+.header nav li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.content {
+	width: 68%;
+	float: left;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+}
+
+.footer {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 0;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	color: #FFF;	
+}
+
+.footer p {
+	width: 91%;
+	margin: 2% auto;
+}
+
+
+@media only screen and (min-width : 10px) and (max-width : 700px)
+{
+	.body {
+		clear: both; 
+		margin: 0 auto;
+    padding:0;
+		width: 90%;
+		font-size: 90%;
+	}
+	h1 {
+		font-size: 1.143em;
+}	
+
+
+	.header nav {
+	  background-color: rgba(0,0,0,0.5);
+		font-size: 1.143em;
+		height: 160px;
+		line-height: 30px;
+		margin-bottom: 0;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+		
+	.header nav ul {
+		list-style: none; 
+		margin: 0 auto;
+		padding-left: 0;
+	}
+	
+	.header nav li {
+		margin-left: 0 auto;
+		width: 100%;
+	}
+	
+	.header nav a:link, .header nav a:visited {
+		color: #FFF;
+		display: block;
+		height: 30px;
+		padding: 5px 0;
+		text-decoration: none;
+	}
+	
+	.header nav a:active,
+	.header nav .active, .header nav .active  {
+	  background-color: rgba(207,92,63,0.5);
+		color: #fff;
+		text-shadow: none !important;
+	}
+		
+	.header nav li a {
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+			
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	.header img {
+		width: 100%;
+		height: auto;
+		margin-bottom: 3%;
+	}
+	
+
+	
+	.content {
+		width: 100%;
+		float: left;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;	
+	}	
+
+	.post-from {
+		display: none;
+	}
+	
+	
+		
+	.footer {
+		width: 100%;
+		float: left;
+		/* margin: 2% 0; */
+        margin-top: 20rem !important;
+		padding-left: 0;
+		background-color: rgba(0,0,0,0.3);
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;	
+		color: #FFF;	
+	}
+	
+	.footer p {
+		width: 86%;
+		margin: 2% auto;
+	}
+}
+
+.login_signup{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 7rem;
+    gap: 2rem;
+    flex-direction: column;
+}
+.lsignup{
+    align-items: center;
+    /* position: absolute; */
+    left: 36%;
+    height: 3rem;
+    width: 18rem;
+    /* border: 1px solid black; */
+    /* background: white; */
+    background: rgb(42, 41, 41);
+    border-radius: 31px;
+}
+.lsignup:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.lsignup button{
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.9rem;
+    transform: scale(1.3);
+    outline: none;
+    border: none;
+    text-decoration: none;
+    background: rgba(0,0,0,0.3);
+    /* color: white; */
+    border-radius: 20px;
+    
+}
+.lsignup button a{
+    text-decoration: none;
+    color: white;
+    background: rgba(0,0,0,0.3);
+}

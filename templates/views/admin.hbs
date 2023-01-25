@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ABC Private Limited</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="logo text-center">
+        <h1>ABC Pvt. Limited</h1>
+    </div>
+    <div class="wrapper">
+        <div class="inner-warpper text-center">
+            <h2 class="title">Admin Login</h2>
+            <form action="/admin_login" id="formvalidate" method="POST">
+                <div class="input-group">
+                    <label class="palceholder" for="userName">User Id/email</label>
+                    <input class="form-control" name="userName" id="userName" type="text" placeholder="" />
+                    <span class="lighting"></span>
+                </div>
+                <div class="input-group">
+                    <label class="palceholder" for="userPassword">Password</label>
+                    <input class="form-control" name="userPassword" id="userPassword" type="password" placeholder="" />
+                    <span class="lighting"></span>
+                </div>
+
+                <a href="/employeepage"><button type="submit" id="login">Login</button></a>
+                <div class="clearfix supporter">
+                    <div class="pull-left remember-me">
+                        <input id="rememberMe" type="checkbox">
+                        <label for="rememberMe">Remember Me</label>
+                    </div>
+                    <a class="forgot pull-right" href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+        {{!-- <div class="signup-wrapper text-center">
+            <a href="/register">Don't have an accout? <span class="text-primary">Create One</span></a>
+        </div> --}}
+    </div>
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script>
+    <script src="./script.js"></script>
+    <script>
+        + function ($) {
+            $('.palceholder').click(function () {
+                $(this).siblings('input').focus();
+            });
+
+            $('.form-control').focus(function () {
+                $(this).parent().addClass("focused");
+            });
+
+            $('.form-control').blur(function () {
+                var $this = $(this);
+                if ($this.val().length == 0)
+                    $(this).parent().removeClass("focused");
+            });
+            $('.form-control').blur();
+
+            // validetion
+            $.validator.setDefaults({
+                errorElement: 'span',
+                errorClass: 'validate-tooltip'
+            });
+
+            
+
+        }(jQuery);
+    </script>
+</body>
+
+</html>

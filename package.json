@@ -1,0 +1,23 @@
+{
+  "name": "registration_form_with_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.6.2",
+    "validator": "^13.7.0"
+  }
+}
