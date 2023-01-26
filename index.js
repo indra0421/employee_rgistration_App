@@ -14,7 +14,7 @@ const hbs = require("hbs");
 const port = process.env.PORT || 4500;
 
 const Register = require("./src/models/employees");
-const { resolveSoa } = require("dns/promises");
+// const { resolveSoa } = require("dns/promises");
 
 //getting the path of public folder for the website
 const static_path = path.join(__dirname, "./public");
