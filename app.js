@@ -110,7 +110,7 @@ app.post("/login", async (req, res) => {
         const uemail = await Register.findOne({ email: useremail });
 
 
-        // res.send(uemail.password);  //to see the password of that particular document
+        
         if (useremail === uemail.email) {
             // res.status(201).send(`login successful`);
             res.render("welcome", {
