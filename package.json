@@ -2,7 +2,7 @@
   "name": "registration_form_with_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     
     "start": "node index.js",
